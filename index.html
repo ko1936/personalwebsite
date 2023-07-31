@@ -27,6 +27,19 @@
             margin: 0;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
         main {
             flex: 1; /* Make the main section grow to fill the available space */
             max-width: 800px;
@@ -63,6 +76,13 @@
         <h1>Kevin Olencz</h1>
     </header>
 
+    <nav>
+        <!-- Page Selector -->
+        <a href="resume.html">Resume</a>
+        <a href="#">More Info</a>
+        <a href="#">Current Thoughts</a>
+    </nav>
+
     <main>
         <section>
             <h2>About Me</h2>
@@ -70,11 +90,7 @@
             <p>Computer enjoyer and cryptography enthusiast.</p>
         </section>
 
-        <section>
-            <h2>Contact Me</h2>
-            <!-- Add your contact information here -->
-            <p>Email: olenczk@gmail.com</p>
-        </section>
+        <!-- Add more sections for "More Info" and "Current Thoughts" here if desired -->
     </main>
 
     <footer>

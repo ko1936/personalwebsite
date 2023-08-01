@@ -10,24 +10,21 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-image: url('attachments/backgroundimage.webp');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #f2f2f2;
+            color: #333;
         }
 
         header {
             text-align: center;
             padding: 2rem 0;
-            background-color: rgba(51, 51, 51, 0.9);
+            background-color: #333;
             color: #fff;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(68, 68, 68, 0.9);
+            background-color: #444;
             padding: 1rem 0;
         }
 
@@ -41,11 +38,10 @@
         }
 
         nav a:hover {
-            background-color: rgba(85, 85, 85, 0.9);
+            background-color: #555;
         }
 
         main {
-            flex: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
@@ -64,24 +60,63 @@
             margin-bottom: 1rem;
         }
 
-        /* Fix for description paragraph */
         p {
             margin: 0;
-            word-wrap: break-word;
-            text-align: center; /* Center-align the paragraph */
         }
 
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: rgba(51, 51, 51, 0.9);
+            background-color: #333;
             color: #fff;
-            clear: both;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+        /* Mobile-friendly styles */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+                display: block;
+                text-align: center;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 0.5rem 0;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            header, nav, footer {
+                display: none;
+            }
+
+            main {
+                box-shadow: none;
+            }
         }
     </style>
 </head>
@@ -91,19 +126,15 @@
     </header>
 
     <nav>
-        <a href="attachments/ResumeKevinOlencz (1).pdf" target="_blank">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
+        <a href="attachments/ResumeKevinOlencz.pdf" target="_blank">Resume</a>
+        <!-- <a href="portfolio.html">Portfolio</a> -->
         <a href="mailto:olenczk@gmail.com">Contact</a>
     </nav>
 
     <main>
         <section>
             <h2>About Me</h2>
-            <p>Computer enjoyer and cryptography enthusiast. I currently
-                <br>reside in the great state of Tennessee with my family.<br>
-                <br>I hold a Bachelors of Computer Science with a<br>
-                <br>focus on cybersecurity from Towson University<br>
-            </p>
+            <p>Computer enjoyer and cryptography enthusiast. I currently reside in the great state of Tennessee with my family. I hold a Bachelors of Computer Science with a focus on cybersecurity from Towson University.</p>
         </section>
 
         <!-- Add more sections or content here to showcase your skills and projects -->
